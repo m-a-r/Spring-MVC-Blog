@@ -3,7 +3,7 @@ body>header {
     padding: 5px;
 }
 
-body>header>a>img, body>header a  {
+body>header>a>img, body>header a {
     display: inline-block;
     vertical-align: middle;
     padding: 0px 5px;
@@ -15,4 +15,14 @@ body>footer {
     padding: 5px;
     margin: 10px 0;
     text-align: center;
+}
+
+#logged-in-info {
+    float: right;
+    margin-top: 18px;
+}
+
+#logged-in-info form {
+    display: inline-block;
+    margin-right: 10px;
 }
