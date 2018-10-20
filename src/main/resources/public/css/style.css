@@ -1,4 +1,5 @@
 body>header {
+    /*border: 1px solid yellow;*/
     background: #eee;
     padding: 5px;
 }
@@ -18,6 +19,7 @@ body>footer {
 }
 
 #logged-in-info {
+    /*border: 1px solid blue;*/
     float: right;
     margin-top: 18px;
 }
@@ -25,4 +27,37 @@ body>footer {
 #logged-in-info form {
     display: inline-block;
     margin-right: 10px;
+}
+
+body>aside {
+    float: right;
+    width: 200px;
+    background: #CCC;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+body>aside>h2 {
+    margin: 5px 0px 15px 0px;
+}
+
+body>aside>a {
+    display: block;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+
+body>main {
+    /*border: 1px solid red;*/
+}
+
+body>main>article {
+    /*border: 1px solid green;*/
+}
+
+body>main:after {
+    content: '';
+    display: block;
+    clear: both;
 }
