@@ -1,6 +1,7 @@
 package pl.xweb.blog.service;
 
 import org.springframework.stereotype.Service;
+import pl.xweb.blog.Exception.PageNotFoundException;
 import pl.xweb.blog.model.Post;
 import pl.xweb.blog.model.User;
 
@@ -57,7 +58,7 @@ public class PostServiceStubImpl implements PostService {
                 .orElse(null);
 
         if (foundPost == null) {
-            throw new RuntimeException("Post not found: " + postId);
+            throw new PageNotFoundException("Post not found: " + postId);
         }
 
         return foundPost;
@@ -89,7 +90,7 @@ public class PostServiceStubImpl implements PostService {
             }
         }
 
-        throw new RuntimeException("Post not found: " + editedPostId);
+        throw new PageNotFoundException("Post not found: " + editedPostId);
     }
 
     @Override
