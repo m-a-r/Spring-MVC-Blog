@@ -57,9 +57,9 @@ public class PostServiceStubImpl implements PostService {
                 .findFirst()
                 .orElse(null);
 
-        if (foundPost == null) {
-            throw new PageNotFoundException("Post not found: " + postId);
-        }
+//        if (foundPost == null) {
+//            throw new PageNotFoundException("Post not found: " + postId);
+//        }
 
         return foundPost;
     }
